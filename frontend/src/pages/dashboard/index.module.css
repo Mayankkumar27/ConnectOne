@@ -1,0 +1,359 @@
+/* .scrollComponent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.createPostContainer {
+    display: flex;
+    height: 10svh;
+    padding-inline: 0.8rem;
+    width: 70%;
+    gap: 1.3rem;
+    position: relative;
+    align-items: center;
+    background: rgb(231, 213, 213);
+    border-radius: 20px;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.userProfile {
+    border-radius: 100%;
+    height: 60%;
+    width: fit-content;
+
+}
+
+.createPostContainer > textarea {
+    width: 100%;
+}
+
+.Fab {
+    background: chartreuse;
+    border-radius: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.Fab > svg {
+    width : fit-content;
+    height: 40px;
+    color: white;
+
+}
+
+.textAreaOfContent {
+    width: 80%;
+    height: 70%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    outline: none;
+}
+
+.uploadButton {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    background: pink;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 1.2rem;
+    padding-block: 0.8rem;
+    cursor: pointer;
+}
+
+.singleCard {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid wheat;
+
+}
+
+.singleCard_profileContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  padding-right: 3.4rem;
+}
+
+.singleCard_profileContainer > img {
+  width: 10%;
+  border-radius: 50%;
+}
+.singleCard_image {
+    width: 100%;
+    padding-top: 0.6rem;
+    height: fit-content;
+    overflow: hidden;
+
+}
+
+.singleCard_image>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+} */
+
+
+
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto; /* Center the feed on the page */
+}
+
+/* --- Create Post Component Styling --- */
+.createPostContainer {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+  position: relative;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.textAreaOfContent {
+  width: 100%;
+  height: 60px; /* Give it a fixed initial height */
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  outline: none;
+  resize: vertical; /* Allow user to resize vertically */
+  transition: border-color 0.2s;
+  flex: 1;
+}
+
+.textAreaOfContent:focus {
+  border-color: #1877f2;
+}
+
+.Fab {
+  background: #1877f2; /* Professional blue instead of green */
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.Fab:hover {
+  transform: scale(1.05);
+  filter: brightness(0.95);
+}
+
+.Fab > svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+
+.uploadButton {
+  background: #e7f3ff;
+  color: #1877f2;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+  margin-top: 5px;
+}
+
+.uploadButton:hover {
+  background: #dcebff;
+}
+
+
+/* --- Styling for Each Post in the Feed --- */
+.postsContainer {
+  width: 100%;
+}
+
+.singleCard_profileContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Common style for both user profile pictures */
+.userProfile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* The div containing all post text */
+.singleCard_profileContainer > div {
+  width: 100%;
+}
+
+/* Styling for text inside the post */
+.singleCard_profileContainer p {
+  margin: 0 0 0.25rem 0; /* Consistent spacing for all text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Username */
+.singleCard_profileContainer > div > div > p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #050505;
+}
+
+/* @username */
+.singleCard_profileContainer > div > p:nth-of-type(1) {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #65676b;
+}
+
+/* Post body text */
+.singleCard_profileContainer > div > p:nth-of-type(2) {
+  padding-top: 0.5rem;
+  color: #050505;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* FIX: This section solves the "image too big" problem */
+.singleCard_image {
+  width: 100%;
+  margin-top: 0.75rem;
+  max-height: 500px; /* Crucial: Prevents image from being too tall */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleCard_image > img {
+  width: 100%;
+  height: auto; /* Let height adjust automatically */
+  max-height: 500px; /* Must match the container's max-height */
+  object-fit: cover;
+}
+
+.optionsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-block: 0.6rem;
+  align-items: center;
+  border-top: 1px solid #efefef;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+.singleOption_optionsContainer > svg {
+  height: 100%;
+  width: 10%;
+  min-width: 1rem;
+
+}
+
+.singleOption_optionsContainer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.commentsContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.allCommentsContainer {
+  min-width: 40svw;
+  height: 80vh;
+  max-width: 1120px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 1.4rem;
+}
+
+.postCommentContainer {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.postCommentContainer>input {
+  flex: 0.9;
+  padding-inline: 1.5rem;
+  padding-block: 1.2rem;
+  border: none;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+}
+
+.postCommentContainer_commentBtn {
+  flex: 0.1;
+  width: fit-content;
+  padding: 1.2rem;
+  background: orange;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+@media  screen and (max-width: 600px) {
+  .allCommentsContainer{
+    width: 90%;
+  }
+  
+}
+

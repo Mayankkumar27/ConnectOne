@@ -1,0 +1,260 @@
+.container {
+  padding: 1.5rem;
+  background-color: #f4f2ee; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.profileHeader {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.backdrop {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 16px; 
+  background-color: #d4eaf7;
+}
+
+.profileAvatar {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); 
+  position: absolute;
+  bottom: -6rem;
+  left: 3rem;
+  z-index: 2;
+}
+
+.profileContent {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.mainContent {
+  flex: 3;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 0;
+}
+
+.profileInfo {
+  background: #ffffff; 
+  padding: 2rem;
+  border-radius: 16px; 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); 
+}
+
+.nameHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.nameHeader h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #191919; 
+  margin: 0;
+}
+
+.nameHeader p {
+  font-size: 1.1rem;
+  color: #5e5e5e; 
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.bioContent {
+  color: #5e5e5e; 
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.profileActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.primaryBtn {
+  background-color: #0a66c2; 
+  color: white;
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.primaryBtn:hover {
+  background-color: #004182; 
+}
+
+.secondaryBtn {
+  background-color: #eef3f8;
+  color: #5e5e5e;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0; 
+  border-radius: 50%;
+  background: #ffffff; 
+  color: #5e5e5e; 
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.iconBtn:hover {
+  color: #0a66c2; 
+  border-color: #0a66c2; 
+  background-color: #eef3f8;
+}
+.iconBtn svg {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.section {
+  background: #ffffff; 
+  padding: 2rem;
+  border-radius: 16px; 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); 
+}
+
+.section h3, .section h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #191919;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.workHistoryCard {
+  border: 1px solid #e0e0e0; 
+  padding: 1.5rem;
+  border-radius: 12px; 
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.workHistoryCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); 
+}
+.workHistoryCard p:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #191919; 
+  margin: 0 0 0.25rem 0;
+}
+.workHistoryCard p:last-child {
+  font-size: 0.9rem;
+  color: #5e5e5e; 
+  margin: 0;
+}
+
+.postCard {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0; 
+}
+.postCard:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.postCard img {
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+.postCard p {
+  color: #5e5e5e; 
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 992px) {
+  .profileContent {
+      flex-direction: column;
+  }
+  .profileAvatar {
+      width: 10rem;
+      height: 10rem;
+      bottom: -5rem;
+      left: 2rem;
+  }
+  .profileHeader {
+      margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+      padding: 0.5rem;
+  }
+  .profileInfo, .section {
+      padding: 1.5rem;
+  }
+  .profileAvatar {
+      width: 8rem;
+      height: 8rem;
+      bottom: -4rem;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  .profileHeader {
+      margin-bottom: 5rem;
+  }
+  .nameHeader {
+      justify-content: center;
+      text-align: center;
+  }
+  .profileActions {
+      justify-content: center;
+  }
+  .nameHeader h2 {
+      font-size: 1.75rem;
+  }
+} 

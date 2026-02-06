@@ -1,0 +1,961 @@
+/* .container {
+    padding: 1.3rem;
+    background: rgb(230,230,230);
+}
+.backDropContainer{
+    width: 100%;
+    height: 30vh;
+    background-image: url('https://imageio.forbes.com/blogs-images/josephliu/files/2019/06/3-martin-adams-764547-unsplash-1200x300.jpeg?format=jpg&width=1440');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+
+
+}
+
+.backDropContainer img {
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+}
+
+.profileContainer_details {
+    padding-top: 6.6rem;
+}
+
+.card_profileContainer {
+    display: flex;
+}
+
+.card_profileContainer > img {
+    width: 3.4rem;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.connectBtn {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.connectedButton {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    border: 1px solid #ccc;
+    outline: none;
+    color: rgba(3, 93, 183, 0.905);
+    border-radius: 10px;
+}.card_profileContainer {
+    display: flex;
+}
+
+.card_profileContainer > img {
+    width: 3.4rem;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.connectBtn {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.connectedButton {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    border: 1px solid #ccc;
+    outline: none;
+    color: rgba(3, 93, 183, 0.905);
+    border-radius: 10px;
+}
+
+.backDrop:hover {
+    transform: xczle(1.1);
+}
+
+.workHistoryContainer {
+    display: flex;
+}
+
+.workHistoryCard {
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+.backDrop_overlay {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+    z-index: 4;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: white;
+    opacity: 0.0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.backDrop_overlay:hover {
+    opacity: 0.8;
+    background: black;
+}
+.profileContainer_details input {
+    outline: none;
+    border-style: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    width: fit-content;
+}
+
+.nameEdit {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.updateProfileBtn {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.profileContainer_details textarea {
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    font-family: "Poppins" !important;
+    font-size: 1.1rem;
+}
+
+.addWorkButton {
+    padding-inline: 1.3rem;
+    background: white;
+    border: 1px dotted silver;
+    border-radius: 10px;
+    padding-block: 1.2rem;
+    cursor: pointer;
+}
+.addEducationButton {
+    padding-inline: 1.3rem;
+    background: white;
+    border: 1px dotted silver;
+    border-radius: 10px;
+    padding-block: 1.2rem;
+    cursor: pointer;
+}
+
+.commentsContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.allCommentsContainer {
+    width: 40vw;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.card__profileContainer > img {
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+  }
+  
+.inputField {
+    flex: 1;
+    padding-inline: 1.3rem;
+    padding-block: 0.8rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #D0CBC6; 
+    background-color: #FFFFFF;
+    color: #2F2F2F;
+    width: 100%;
+    min-width: 0;
+  } */
+
+
+
+
+
+
+
+
+  /* .container {
+    padding: 1.3rem;
+    background: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.backDropContainer {
+    width: 100%;
+    height: 30vh;
+    background-image: url('https://imageio.forbes.com/blogs-images/josephliu/files/2019/06/3-martin-adams-764547-unsplash-1200x300.jpeg?format=jpg&width=1440');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+
+
+.backDropContainer img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -60px;
+    left: 40px;
+    border: 4px solid white;
+    background: white;
+}
+
+.backDrop_overlay {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -60px;
+    left: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.backDrop_overlay:hover {
+    opacity: 1;
+}
+
+.profileContainer_details {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.profileContainer_details input {
+    outline: none;
+    border: none;
+    padding: 10px 14px;
+    background: #e8e8e8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #333;
+}
+
+.bioTextarea,
+.user-bio {
+    outline: none;
+    border: none;
+    background: #e8e8e8;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+    color: #333;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.workEducationContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.workHistoryCard {
+    flex: 1;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(180, 180, 180, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.addWorkButton,
+.addEducationButton {
+    margin-top: auto;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px dashed #aaa;
+    background: #fafafa;
+    cursor: pointer;
+    text-align: center;
+    color: #444;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.addWorkButton:hover,
+.addEducationButton:hover {
+    background-color: #f0f0f0;
+}
+
+.recentActivityContainer {
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+}
+
+.updateProfileBtn {
+    padding: 0.6rem 1.4rem;
+    margin: 2rem auto 0;
+    display: block;
+    background: #035db7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.updateProfileBtn:hover {
+    background: #024a93;
+} */
+
+
+
+
+/* 
+
+
+
+.container {
+    padding: 1.3rem;
+    background: #f8f9fa;
+}
+
+.backDropContainer{
+    width: 100%;
+    height: 30vh;
+    background-image: url('https://cdn.shopify.com/s/files/1/0066/4574/3686/files/Blue_Architecture_Pattern_LinkedIn_Background_Photo.png?v=1627912075');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+
+.backDropContainer img,
+.backDrop_overlay {
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4.5rem;
+    left: 2.5rem;
+}
+
+.backDropContainer img {
+    border: 5px solid white;
+    z-index: 3;
+}
+
+.backDrop_overlay {
+    z-index: 4;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.backDrop_overlay:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.profileContainer_details {
+    padding-top: 6.6rem;
+}
+
+.profileContainer_details input,
+.profileContainer_details textarea {
+    outline: none;
+    border: 1px solid #e0e0e0;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.nameEdit {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.workHistoryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.workHistoryCard {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.workHistoryCard:hover {
+    transform: translateY(-5px);
+}
+
+.addWorkButton,
+.addEducationButton {
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 2px dashed #d0d0d0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #555;
+    min-height: 120px;
+}
+
+.addWorkButton:hover,
+.addEducationButton:hover {
+    border-color: #035db7;
+    color: #035db7;
+}
+
+.card_profileContainer {
+    display: flex;
+}
+
+.card_profileContainer > img {
+    width: 3.4rem;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.connectBtn {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.connectedButton {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    border: 1px solid #ccc;
+    outline: none;
+    color: rgba(3, 93, 183, 0.905);
+    border-radius: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.updateProfileBtn {
+    background: linear-gradient(45deg, #0d6efd, #035db7);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.updateProfileBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.commentsContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.allCommentsContainer {
+    width: 40vw;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.inputField {
+    flex: 1;
+    padding-inline: 1.3rem;
+    padding-block: 0.8rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #D0CBC6;
+    background-color: #FFFFFF;
+    color: #2F2F2F;
+    width: 100%;
+    min-width: 0;
+} */
+
+
+.container {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.backDropContainer {
+    width: 100%;
+    height: 35vh;
+    background-image: url('https://cdn.shopify.com/s/files/1/0066/4574/3686/files/Blue_Architecture_Pattern_LinkedIn_Background_Photo.png?v=1627912075');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.backDropContainer img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5rem;
+    left: 3rem;
+    border: 6px solid #ffffff;
+    z-index: 3;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.backDrop_overlay {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5rem;
+    left: 3rem;
+    z-index: 4;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.backDrop_overlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.profileContainer_details {
+    padding: 7rem 1.5rem 2rem; 
+}
+
+.profileDetailsGrid {
+    display: flex;
+    gap: 2rem;
+}
+
+.profileInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.nameEdit {
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    background: transparent;
+    width: auto;
+}
+
+.nameEdit:focus {
+    border-bottom: 2px solid #0d6efd;
+}
+
+.bioTextarea {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #6c757d;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+}
+
+.bioTextarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.recentActivity {
+    flex-basis: 350px;
+    flex-shrink: 0;
+}
+
+.recentActivity h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.postCard {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.postCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.postCard img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.postCard p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    /* Truncate long text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.sectionContainer {
+    margin-top: 2.5rem;
+}
+
+.sectionContainer h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.workHistoryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.workHistoryCard {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #0d6efd;
+}
+
+.workHistoryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.workHistoryCard p:first-child {
+    font-weight: 600;
+    color: #212529;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.workHistoryCard p:last-child {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+
+.addEducationButton {
+    background-color: #ffffff;
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 1rem;
+    min-height: 120px; 
+}
+.addWorkButton{
+    background-color: #ffffff;
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 1rem;
+    min-height: 120px; 
+}
+
+.addWorkButton:hover,
+.addEducationButton:hover {
+    border-color: #035db7;
+    color: #035db7;
+    background-color: #f0f7ff;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.updateProfileBtn {
+    
+    background: linear-gradient(45deg, #0d6efd, #035db7);
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.25);
+    transition: all 0.3s ease;
+    outline: none;
+    text-align: center; /* Ensures text is centered */
+}
+
+.updateProfileBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.35);
+}
+
+.commentsContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100; 
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.allCommentsContainer {
+    width: 90%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: slideUp 0.4s ease-out;
+}
+
+.allCommentsContainer h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.inputField {
+    padding: 0.9rem 1.1rem;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    color: #212529;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputField:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 992px) {
+    .profileDetailsGrid {
+        flex-direction: column;
+    }
+
+    .backDropContainer img, .backDrop_overlay {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .profileContainer_details {
+        text-align: center;
+        padding-top: 8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .backDropContainer {
+        height: 25vh;
+    }
+
+    .backDropContainer img, .backDrop_overlay {
+        width: 8rem;
+        height: 8rem;
+        bottom: -4rem;
+    }
+
+    .profileContainer_details {
+        padding: 6rem 1rem 1rem;
+    }
+
+    .nameEdit {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .allCommentsContainer {
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
