@@ -1,0 +1,74 @@
+POST http://localhost:9090/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "Aditya",
+  "password": "12345",
+  "email": "adi@gmail.com",
+  "name": "Aditya"
+}
+###
+
+POST http://localhost:9090/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "Evan21",
+  "password": "98765",
+  "email": "evan@gmail.com",
+  "name": "Evan"
+}
+###
+POST http://localhost:9090/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "adi@gmail.com",
+  "password": "12345"
+}
+
+
+###
+POST http://localhost:9090/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "evan@gmail.com",
+  "password": "98765"
+}
+
+###
+
+GET http://localhost:9090/get_user_and_profile
+Content-Type: application/json
+
+{
+  "token":"26c093e6332ea2fd15abc7506dd453f24568d19b3045421e9a2e3facd28c9f27"
+}
+
+###
+
+POST http://localhost:9090/update_profile_data
+Content-Type: application/json
+
+{
+  "token": "e8b4e6c8ad981c5d03c19168bd8028e487bc2f142e6ac96bf2be44d211f65426",
+  "bio": "",
+  "currentPost": "CTO",
+  "pastWork": [
+    {
+      "company": "Microsoft",
+      "position": "CTO",
+      "years": "2+"
+    }
+  ],
+  "education": [
+    {
+      "school": "IIIT",
+      "degree": "B.Tech",
+      "fieldOfStudy": "2015-2019"
+    }
+  ]
+}
+
+
